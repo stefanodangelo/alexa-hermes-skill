@@ -5,16 +5,12 @@ import json
 
 import ask_sdk_core.utils as ask_utils
 
-from ask_sdk_core.skill_builder import SkillBuilder, CustomSkillBuilder
+from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.dispatch_components import AbstractExceptionHandler
 from ask_sdk_core.handler_input import HandlerInput
 
 from ask_sdk_model import Response
-
-# Imports for progressive response
-from ask_sdk_model.services.directive import Directive, SendDirectiveRequest, SpeakDirective, Header
-from ask_sdk_model.services import ServiceClientFactory
 
 # Import the DefaultApiClient for enabling API calls
 from ask_sdk_core.api_client import DefaultApiClient
@@ -23,7 +19,7 @@ from ask_sdk_core.api_client import DefaultApiClient
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-TLDR_API_URL = "https://hermes-phi.vercel.app/tldr-news"
+API_URL = "https://hermes-phi.vercel.app/tldr-news"
 
 # --- LOCALIZED STRINGS DICTIONARY --
 LOCALIZED_STRINGS = json.load(open("responses.json", "r", encoding="utf-8"))
@@ -112,38 +108,12 @@ class NewsRequestIntentHandler(AbstractRequestHandler):
             logger.info(f"Alexa locale: {alexa_locale}, API language: {api_language}")
             
             user_input_slot = request.intent.slots.get("userInput")
-            
-            # --- START PROGRESSIVE RESPONSE ---
-            # try:
-            #     progressive_speak = get_localized_string(handler_input, "PROGRESSIVE_RESPONSE_NEWS")
-                
-            #     service_client_factory = handler_input.service_client_factory
-                
-            #     if service_client_factory and service_client_factory.get_directive_service():
-            #         directive_service_client = service_client_factory.get_directive_service()
-            #         api_access_token = handler_input.request_envelope.context.system.api_access_token
-                    
-            #         if api_access_token:
-            #             directive_request = SendDirectiveRequest(
-            #                 header=Header(request_id=request.request_id),
-            #                 directive=SpeakDirective(speech=progressive_speak)
-            #             )
-            #             directive_service_client.enqueue(directive_request)
-            #             logger.info(f"Progressive response sent: '{progressive_speak}'")
-            #         else:
-            #             logger.warning("API Access Token not available for progressive response.")
-            #     else:
-            #         logger.warning("Directive service client not available for progressive response.")
-
-            # except Exception as e:
-            #     logger.error(f"Error sending progressive response: {e}", exc_info=True)
-            # --- END PROGRESSIVE RESPONSE ---
 
             if user_input_slot and user_input_slot.value:
                 user_input = user_input_slot.value
                 logger.info(f"Successfully extracted user input: '{user_input}'")
 
-                response = requests.get(TLDR_API_URL, params={"query": user_input.strip(), "language": alexa_locale})
+                response = requests.get(API_URL, params={"query": user_input.strip(), "language": alexa_locale})
 
                 if response.status_code == 200:
                     speak_output = response.text
@@ -296,8 +266,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 # payloads to the handlers above. Make sure any new handlers or interceptors you've
 # defined are included below. The order matters - they're processed top to bottom.
 
-# sb = SkillBuilder()
-sb = CustomSkillBuilder(api_client=DefaultApiClient())
+sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(HelloWorldIntentHandler())
