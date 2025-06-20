@@ -12,6 +12,10 @@ from ask_sdk_core.handler_input import HandlerInput
 
 from ask_sdk_model import Response
 
+# Imports for progressive response
+from ask_sdk_model.services.directive import Directive, SendDirectiveRequest, SpeakDirective, Header
+from ask_sdk_model.services import ServiceClientFactory
+
 # Import the DefaultApiClient for enabling API calls
 from ask_sdk_core.api_client import DefaultApiClient
 
@@ -19,7 +23,7 @@ from ask_sdk_core.api_client import DefaultApiClient
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-API_URL = "https://hermes-phi.vercel.app/tldr-news"
+TLDR_API_URL = "https://hermes-phi.vercel.app/tldr-news"
 
 # --- LOCALIZED STRINGS DICTIONARY --
 LOCALIZED_STRINGS = json.load(open("responses.json", "r", encoding="utf-8"))
@@ -29,11 +33,10 @@ LOCALIZED_STRINGS = json.load(open("responses.json", "r", encoding="utf-8"))
 def get_localized_string(handler_input: HandlerInput, key: str, **kwargs) -> str:
     """
     Helper function to get localized string based on current locale.
-    Falls back to 'en-US' if the specific locale or key is not found.
     Allows for string formatting using kwargs.
     """
     locale = handler_input.request_envelope.request.locale
-    api_language = locale.split('-')[0].upper()
+    api_language = locale.split('-')[0].lower()
     
     # Try to get the string for the specific locale
     locale_strings = LOCALIZED_STRINGS.get(locale, LOCALIZED_STRINGS[api_language])
@@ -113,7 +116,7 @@ class NewsRequestIntentHandler(AbstractRequestHandler):
                 user_input = user_input_slot.value
                 logger.info(f"Successfully extracted user input: '{user_input}'")
 
-                response = requests.get(API_URL, params={"query": user_input.strip(), "language": alexa_locale})
+                response = requests.get(TLDR_API_URL, params={"query": user_input.strip(), "language": alexa_locale})
 
                 if response.status_code == 200:
                     speak_output = response.text
