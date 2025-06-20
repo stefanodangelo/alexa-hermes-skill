@@ -1,0 +1,64 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "مرحباً",
+            "كيف حالك",
+            "قل مرحبا بالعالم",
+            "قل مرحبا",
+            "مرحباً",
+            "قل مرحبا بالعالم",
+            "قل مرحبا"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "userInput",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "NewsRequestIntent",
+          "samples": [
+            "هيرميس {userInput}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "LanguageCheckIntent",
+          "samples": [
+            "ما هي اللغة",
+            "اللغة",
+            "ما هي اللغة التي أتحدث بها"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "هيرميس ."
+    }
+  }
+}

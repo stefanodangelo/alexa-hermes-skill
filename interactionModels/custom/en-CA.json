@@ -1,0 +1,64 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "userInput",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "NewsRequestIntent",
+          "samples": [
+            "hermes {userInput}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "LanguageCheckIntent",
+          "samples": [
+            "what language",
+            "language",
+            "what language am I speaking in"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "hermes ."
+    }
+  }
+}

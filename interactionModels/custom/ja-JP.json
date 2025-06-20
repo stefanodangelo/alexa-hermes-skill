@@ -1,0 +1,64 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "こんにちは",
+            "お元気ですか",
+            "ハローワールドと言って",
+            "こんにちはと言って",
+            "こんにちは",
+            "ハローワールドと言って",
+            "こんにちはと言って"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "userInput",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "NewsRequestIntent",
+          "samples": [
+            "ヘルメス {userInput}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "LanguageCheckIntent",
+          "samples": [
+            "何語",
+            "言語",
+            "何語を話していますか"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "ヘルメス。"
+    }
+  }
+}

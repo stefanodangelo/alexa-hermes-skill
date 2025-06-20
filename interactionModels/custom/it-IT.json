@@ -1,0 +1,64 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "ciao",
+            "come stai",
+            "dì ciao mondo",
+            "dì ciao",
+            "ciao",
+            "dì ciao mondo",
+            "dì ciao"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "userInput",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "NewsRequestIntent",
+          "samples": [
+            "hermes {userInput}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "LanguageCheckIntent",
+          "samples": [
+            "che lingua",
+            "lingua",
+            "in che lingua sto parlando"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "hermes ."
+    }
+  }
+}

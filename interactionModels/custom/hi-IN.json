@@ -1,0 +1,64 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "नमस्ते",
+            "आप कैसे हैं",
+            "नमस्ते दुनिया कहो",
+            "नमस्ते कहो",
+            "नमस्ते",
+            "नमस्ते दुनिया कहो",
+            "नमस्ते कहो"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "userInput",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "NewsRequestIntent",
+          "samples": [
+            "हर्मीस {userInput}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "LanguageCheckIntent",
+          "samples": [
+            "कौन सी भाषा",
+            "भाषा",
+            "मैं कौन सी भाषा में बात कर रहा हूँ"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "हर्मीस ."
+    }
+  }
+}

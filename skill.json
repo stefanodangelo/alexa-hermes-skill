@@ -1,0 +1,283 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:593793031650:function:d6aed073-b9d2-4278-bc7e-fef81cc4a3c0:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:593793031650:function:d6aed073-b9d2-4278-bc7e-fef81cc4a3c0:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:593793031650:function:d6aed073-b9d2-4278-bc7e-fef81cc4a3c0:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:593793031650:function:d6aed073-b9d2-4278-bc7e-fef81cc4a3c0:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "automaticClonedLocale": {
+        "locales": [
+          {
+            "source": "en-US"
+          }
+        ]
+      },
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "ar-SA": {
+          "description": "هيرميس يقدم لك ملخصات إخبارية موجزة عن مواضيع تهمك. يمكنك طلب أخبار حول الذكاء الاصطناعي، العملات المشفرة، البيانات، التصميم، التطوير، DevOps، التكنولوجيا المالية، المؤسسين، أمن المعلومات، التسويق، المنتجات، أو الأخبار العامة. فقط قل 'هيرميس، أعطني ملخصًا عن [الموضوع]' أو 'هيرميس، ما هي آخر الأخبار؟'",
+          "examplePhrases": [
+            "افتح هيرميس",
+            "مرحباً",
+            "مساعدة",
+            "هيرميس، ما هي أخبار اليوم؟",
+            "هيرميس، ملخص عن الذكاء الاصطناعي",
+            "هيرميس، أخبار العملات المشفرة"
+          ],
+          "keywords": ["أخبار", "ملخص", "ذكاء اصطناعي", "عملات مشفرة", "بيانات", "تصميم", "تطوير", "DevOps", "تكنولوجيا مالية", "مؤسسون", "أمن معلومات", "تسويق", "منتجات", "عام"],
+          "name": "هيرميس",
+          "summary": "ملخصات إخبارية موجزة حول الذكاء الاصطناعي، العملات المشفرة، التكنولوجيا، والتصميم والمزيد."
+        },
+        "de-DE": {
+          "description": "Hermes liefert Ihnen prägnante Nachrichtenübersichten zu relevanten Themen. Sie können Nachrichten zu KI, Krypto, Daten, Design, Entwicklung, DevOps, Fintech, Gründern, Informationssicherheit, Marketing, Produkt oder allgemeine Nachrichten anfordern. Sagen Sie einfach 'Hermes, gib mir eine Zusammenfassung zu [Thema]' oder 'Hermes, was gibt es Neues?'",
+          "examplePhrases": [
+            "Alexa öffne Hermes",
+            "Hallo",
+            "Hilfe",
+            "Hermes, was sind die heutigen Nachrichten?",
+            "Hermes, fasse KI-Nachrichten zusammen",
+            "Hermes, Nachrichten über Kryptowährungen"
+          ],
+          "keywords": ["Nachrichten", "Zusammenfassung", "KI", "Krypto", "Daten", "Design", "Entwicklung", "DevOps", "Fintech", "Gründer", "Informationssicherheit", "Marketing", "Produkt", "Allgemein"],
+          "name": "Hermes",
+          "summary": "Prägnante Nachrichtenübersichten zu KI, Krypto, Technologie, Design und mehr."
+        },
+        "en-US": {
+          "description": "Hermes provides you with concise news summaries on topics that matter to you. You can ask for news on AI, Crypto, Data, Design, Dev, DevOps, Fintech, Founders, Infosec, Marketing, Product, or General news. Just say 'Hermes, give me a summary on [topic]' or 'Hermes, what's the latest news?'",
+          "examplePhrases": [
+            "Alexa open Hermes",
+            "Hello",
+            "Help",
+            "Hermes, what are today's news?",
+            "Hermes, summarize AI news",
+            "Hermes, crypto news"
+          ],
+          "keywords": ["news", "summary", "AI", "crypto", "data", "design", "dev", "DevOps", "fintech", "founders", "infosec", "marketing", "product", "general"],
+          "name": "Hermes",
+          "summary": "Concise news summaries on AI, crypto, tech, design, and more."
+        },
+        "en-CA": {
+          "description": "Hermes provides you with concise news summaries on topics that matter to you. You can ask for news on AI, Crypto, Data, Design, Dev, DevOps, Fintech, Founders, Infosec, Marketing, Product, or General news. Just say 'Hermes, give me a summary on [topic]' or 'Hermes, what's the latest news?'",
+          "examplePhrases": [
+            "Alexa open Hermes",
+            "Hello",
+            "Help",
+            "Hermes, what are today's news?",
+            "Hermes, summarize AI news",
+            "Hermes, crypto news"
+          ],
+          "keywords": ["news", "summary", "AI", "crypto", "data", "design", "dev", "DevOps", "fintech", "founders", "infosec", "marketing", "product", "general"],
+          "name": "Hermes",
+          "summary": "Concise news summaries on AI, crypto, tech, design, and more."
+        },
+        "pt-BR": {
+          "description": "Hermes fornece resumos de notícias concisos sobre tópicos que são importantes para você. Você pode pedir notícias sobre IA, Cripto, Dados, Design, Dev, DevOps, Fintech, Fundadores, Segurança da Informação, Marketing, Produto ou notícias Gerais. Basta dizer 'Hermes, me dê um resumo sobre [tópico]' ou 'Hermes, quais são as últimas notícias?'",
+          "examplePhrases": [
+            "Alexa abrir Hermes",
+            "Olá",
+            "Ajuda",
+            "Hermes, quais são as notícias de hoje?",
+            "Hermes, resuma as notícias de IA",
+            "Hermes, notícias de criptomoedas"
+          ],
+          "keywords": ["notícias", "resumo", "IA", "cripto", "dados", "design", "desenvolvimento", "DevOps", "fintech", "fundadores", "segurança da informação", "marketing", "produto", "geral"],
+          "name": "Hermes",
+          "summary": "Resumos de notícias concisos sobre IA, cripto, tecnologia, design e muito mais."
+        },
+        "en-IN": {
+          "description": "Hermes provides you with concise news summaries on topics that matter to you. You can ask for news on AI, Crypto, Data, Design, Dev, DevOps, Fintech, Founders, Infosec, Marketing, Product, or General news. Just say 'Hermes, give me a summary on [topic]' or 'Hermes, what's the latest news?'",
+          "examplePhrases": [
+            "Alexa open Hermes",
+            "Hello",
+            "Help",
+            "Hermes, what are today's news?",
+            "Hermes, summarize AI news",
+            "Hermes, crypto news"
+          ],
+          "keywords": ["news", "summary", "AI", "crypto", "data", "design", "dev", "DevOps", "fintech", "founders", "infosec", "marketing", "product", "general"],
+          "name": "Hermes",
+          "summary": "Concise news summaries on AI, crypto, tech, design, and more."
+        },
+        "es-ES": {
+          "description": "Hermes le proporciona resúmenes de noticias concisos sobre temas que le interesan. Puede pedir noticias sobre IA, Cripto, Datos, Diseño, Desarrollo, DevOps, Fintech, Fundadores, Seguridad de la Información, Marketing, Producto o noticias Generales. Simplemente diga 'Hermes, dame un resumen sobre [tema]' o 'Hermes, ¿cuáles son las últimas noticias?'",
+          "examplePhrases": [
+            "Alexa abre Hermes",
+            "Hola",
+            "Ayuda",
+            "Hermes, ¿cuáles son las noticias de hoy?",
+            "Hermes, resume noticias de IA",
+            "Hermes, noticias de cripto"
+          ],
+          "keywords": ["noticias", "resumen", "IA", "cripto", "datos", "diseño", "desarrollo", "DevOps", "fintech", "fundadores", "seguridad de la información", "marketing", "producto", "general"],
+          "name": "Hermes",
+          "summary": "Resúmenes de noticias concisos sobre IA, cripto, tecnología, diseño y más."
+        },
+        "fr-CA": {
+          "description": "Hermes vous fournit des résumés de nouvelles concis sur des sujets qui vous intéressent. Vous pouvez demander des nouvelles sur l'IA, la Crypto, les Données, le Design, le Dev, le DevOps, la Fintech, les Fondateurs, la Sécurité de l'Information, le Marketing, les Produits ou les nouvelles Générales. Dites simplement 'Hermes, donne-moi un résumé sur [sujet]' ou 'Hermes, quelles sont les dernières nouvelles ?'",
+          "examplePhrases": [
+            "Alexa ouvre Hermes",
+            "Bonjour",
+            "Aide",
+            "Hermes, quelles sont les nouvelles d'aujourd'hui ?",
+            "Hermes, résume les nouvelles sur l'IA",
+            "Hermes, nouvelles crypto"
+          ],
+          "keywords": ["nouvelles", "résumé", "IA", "crypto", "données", "design", "développement", "DevOps", "fintech", "fondateurs", "sécurité de l'information", "marketing", "produit", "général"],
+          "name": "Hermes",
+          "summary": "Résumés de nouvelles concis sur l'IA, la crypto, la technologie, le design et plus encore."
+        },
+        "es-MX": {
+          "description": "Hermes te proporciona resúmenes de noticias concisos sobre temas que te interesan. Puedes pedir noticias sobre IA, Cripto, Datos, Diseño, Desarrollo, DevOps, Fintech, Fundadores, Seguridad de la Información, Marketing, Producto o noticias Generales. Simplemente di 'Hermes, dame un resumen sobre [tema]' o 'Hermes, ¿cuáles son las últimas noticias?'",
+          "examplePhrases": [
+            "Alexa abre Hermes",
+            "Hola",
+            "Ayuda",
+            "Hermes, ¿cuáles son las noticias de hoy?",
+            "Hermes, resume noticias de IA",
+            "Hermes, noticias de cripto"
+          ],
+          "keywords": ["noticias", "resumen", "IA", "cripto", "datos", "diseño", "desarrollo", "DevOps", "fintech", "fundadores", "seguridad de la información", "marketing", "producto", "general"],
+          "name": "Hermes",
+          "summary": "Resúmenes de noticias concisos sobre IA, cripto, tecnología, diseño y más."
+        },
+        "it-IT": {
+          "description": "Hermes ti fornisce riassunti di notizie concisi sugli argomenti che ti interessano. Puoi chiedere notizie su AI, Cripto, Dati, Design, Sviluppo, DevOps, Fintech, Fondatori, Sicurezza delle informazioni, Marketing, Prodotto o notizie Generali. Basta dire 'Hermes, dammi un riassunto su [argomento]' o 'Hermes, quali sono le ultime notizie?'",
+          "examplePhrases": [
+            "Alexa apri Hermes",
+            "Ciao",
+            "Aiuto",
+            "Hermes, quali sono le notizie di oggi?",
+            "Hermes, riassumi le notizie sull'AI",
+            "Hermes, notizie sulle criptovalute"
+          ],
+          "keywords": ["notizie", "riassunto", "AI", "cripto", "dati", "design", "sviluppo", "DevOps", "fintech", "fondatori", "sicurezza delle informazioni", "marketing", "prodotto", "generale"],
+          "name": "Hermes",
+          "summary": "Riassunti di notizie concisi su AI, cripto, tecnologia, design e altro."
+        },
+        "nl-NL": {
+          "description": "Hermes biedt u beknopte nieuwsberichten over onderwerpen die u belangrijk vindt. U kunt nieuws vragen over AI, Crypto, Data, Design, Dev, DevOps, Fintech, Founders, Infosec, Marketing, Product of Algemeen nieuws. Zeg gewoon 'Hermes, geef me een samenvatting over [onderwerp]' of 'Hermes, wat is het laatste nieuws?'",
+          "examplePhrases": [
+            "Alexa open Hermes",
+            "Hallo",
+            "Help",
+            "Hermes, wat is het nieuws van vandaag?",
+            "Hermes, vat AI nieuws samen",
+            "Hermes, crypto nieuws"
+          ],
+          "keywords": ["nieuws", "samenvatting", "AI", "crypto", "data", "design", "dev", "DevOps", "fintech", "founders", "infosec", "marketing", "product", "algemeen"],
+          "name": "Hermes",
+          "summary": "Beknopte nieuwsberichten over AI, crypto, technologie, design en meer."
+        },
+        "hi-IN": {
+          "description": "हर्मीस आपको उन विषयों पर संक्षिप्त समाचार सारांश प्रदान करता है जो आपके लिए महत्वपूर्ण हैं। आप एआई, क्रिप्टो, डेटा, डिज़ाइन, देव, DevOps, फिनटेक, फाउंडर्स, इन्फोसेक, मार्केटिंग, उत्पाद, या सामान्य समाचारों पर समाचार मांग सकते हैं। बस 'हर्मीस, मुझे [विषय] पर सारांश दें' या 'हर्मीस, नवीनतम समाचार क्या हैं?' कहें।",
+          "examplePhrases": [
+            "एलेक्सा हर्मीस खोलो",
+            "नमस्ते",
+            "मदद",
+            "हर्मीस, आज की खबरें क्या हैं?",
+            "हर्मीस, एआई समाचारों का सारांश दें",
+            "हर्मीस, क्रिप्टो समाचार"
+          ],
+          "keywords": ["समाचार", "सारांश", "एआई", "क्रिप्टो", "डेटा", "डिज़ाइन", "देव", "DevOps", "फिनटेक", "फाउंडर्स", "इन्फोसेक", "मार्केटिंग", "उत्पाद", "सामान्य"],
+          "name": "हर्मीस",
+          "summary": "एआई, क्रिप्टो, तकनीक, डिज़ाइन और अधिक पर संक्षिप्त समाचार सारांश।"
+        },
+        "en-AU": {
+          "description": "Hermes provides you with concise news summaries on topics that matter to you. You can ask for news on AI, Crypto, Data, Design, Dev, DevOps, Fintech, Founders, Infosec, Marketing, Product, or General news. Just say 'Hermes, give me a summary on [topic]' or 'Hermes, what's the latest news?'",
+          "examplePhrases": [
+            "Alexa open Hermes",
+            "Hello",
+            "Help",
+            "Hermes, what are today's news?",
+            "Hermes, summarize AI news",
+            "Hermes, crypto news"
+          ],
+          "keywords": ["news", "summary", "AI", "crypto", "data", "design", "dev", "DevOps", "fintech", "founders", "infosec", "marketing", "product", "general"],
+          "name": "Hermes",
+          "summary": "Concise news summaries on AI, crypto, tech, design, and more."
+        },
+        "es-US": {
+          "description": "Hermes te proporciona resúmenes de noticias concisos sobre temas que te interesan. Puedes pedir noticias sobre IA, Cripto, Datos, Diseño, Desarrollo, DevOps, Fintech, Fundadores, Seguridad de la Información, Marketing, Producto o noticias Generales. Simplemente di 'Hermes, dame un resumen sobre [tema]' o 'Hermes, ¿cuáles son las últimas noticias?'",
+          "examplePhrases": [
+            "Alexa abre Hermes",
+            "Hola",
+            "Ayuda",
+            "Hermes, ¿cuáles son las noticias de hoy?",
+            "Hermes, resume noticias de IA",
+            "Hermes, noticias de cripto"
+          ],
+          "keywords": ["noticias", "resumen", "IA", "cripto", "datos", "diseño", "desarrollo", "DevOps", "fintech", "fundadores", "seguridad de la información", "marketing", "producto", "general"],
+          "name": "Hermes",
+          "summary": "Resúmenes de noticias concisos sobre IA, cripto, tecnología, diseño y más."
+        },
+        "fr-FR": {
+          "description": "Hermes vous fournit des résumés de nouvelles concis sur des sujets qui vous intéressent. Vous pouvez demander des nouvelles sur l'IA, la Crypto, les Données, le Design, le Dev, le DevOps, la Fintech, les Fondateurs, la Sécurité de l'Information, le Marketing, les Produits ou les nouvelles Générales. Dites simplement 'Hermes, donne-moi un résumé sur [sujet]' ou 'Hermes, quelles sont les dernières nouvelles ?'",
+          "examplePhrases": [
+            "Alexa ouvre Hermes",
+            "Bonjour",
+            "Aide",
+            "Hermes, quelles sont les nouvelles d'aujourd'hui ?",
+            "Hermes, résume les nouvelles sur l'IA",
+            "Hermes, nouvelles crypto"
+          ],
+          "keywords": ["nouvelles", "résumé", "IA", "crypto", "données", "design", "développement", "DevOps", "fintech", "fondateurs", "sécurité de l'information", "marketing", "produit", "général"],
+          "name": "Hermes",
+          "summary": "Résumés de nouvelles concis sur l'IA, la crypto, la technologie, le design et plus encore."
+        },
+        "en-GB": {
+          "description": "Hermes provides you with concise news summaries on topics that matter to you. You can ask for news on AI, Crypto, Data, Design, Dev, DevOps, Fintech, Founders, Infosec, Marketing, Product, or General news. Just say 'Hermes, give me a summary on [topic]' or 'Hermes, what's the latest news?'",
+          "examplePhrases": [
+            "Alexa open Hermes",
+            "Hello",
+            "Help",
+            "Hermes, what are today's news?",
+            "Hermes, summarise AI news",
+            "Hermes, crypto news"
+          ],
+          "keywords": ["news", "summary", "AI", "crypto", "data", "design", "dev", "DevOps", "fintech", "founders", "infosec", "marketing", "product", "general"],
+          "name": "Hermes",
+          "summary": "Concise news summaries on AI, crypto, tech, design, and more."
+        },
+        "ja-JP": {
+          "description": "Hermesは、関心のあるトピックの簡潔なニュース要約を提供します。AI、暗号通貨、データ、デザイン、開発、DevOps、フィンテック、創業者、情報セキュリティ、マーケティング、プロダクト、または一般ニュースについて尋ねることができます。「Hermes、[トピック]について要約して」または「Hermes、最新のニュースは何ですか？」と話しかけてください。",
+          "examplePhrases": [
+            "アレクサ ヘルメスを開いて",
+            "こんにちは",
+            "ヘルプ",
+            "ヘルメス、今日のニュースは何ですか？",
+            "ヘルメス、AIニュースを要約して",
+            "ヘルメス、暗号通貨のニュース"
+          ],
+          "keywords": ["ニュース", "要約", "AI", "暗号通貨", "データ", "デザイン", "開発", "DevOps", "フィンテック", "創業者", "情報セキュリティ", "マーケティング", "プロダクト", "一般"],
+          "name": "ヘルメス",
+          "summary": "AI、暗号通貨、テクノロジー、デザインなどに関する簡潔なニュース要約。"
+        }
+      },
+      "testingInstructions": "To test Hermes, open the skill by saying 'Alexa, open Hermes'. You can then ask for a general news summary by saying 'What are today's news?' or 'Give me a news summary'. To request news on a specific topic, say 'Summarize [topic] news', for example, 'Summarize AI news', 'Crypto news', 'DevOps news', etc. Hermes currently supports: AI, Crypto, Data, Design, Dev, DevOps, Fintech, Founders, Infosec, Marketing, Product, and General news. Try asking for help ('Help') or saying goodbye ('Goodbye') as well. Ensure you test in all available locales."
+    }
+  }
+}
